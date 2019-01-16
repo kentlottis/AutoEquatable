@@ -177,8 +177,7 @@ private func isNonInternalAutoEquatableEqual(lhs: Any, rhs: Any) -> Bool {
     // Dictionary Check
 
     if lhsMirror.displayStyle == .dictionary && rhsMirror.displayStyle == .dictionary {
-//        return manualDictionaryEquality(lhsMirror: lhsMirror, rhsMirror: rhsMirror)
-        return areChildrenEqual(lhsMirror: lhsMirror, rhsMirror: rhsMirror)
+        return manualDictionaryEquality(lhsMirror: lhsMirror, rhsMirror: rhsMirror)
     }
 
     // Optional Check
